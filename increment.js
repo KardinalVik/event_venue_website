@@ -6,4 +6,4 @@ minusBtn.addEventListener('click', (e) => {
     el += 1;
     document.getElementById("TR").textContent = el;
     //e.preventDefault();
-  });
+});

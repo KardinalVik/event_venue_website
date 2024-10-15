@@ -1,0 +1,29 @@
+/* Site-wide Styling */
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+#header {
+    width: auto;
+    margin: 20px;
+    margin-bottom: 0px;
+    padding: 10px;
+    height: 10%;
+    border-radius: 25px;
+    background-color: rgb(235, 235, 235);
+}
+
+nav ul {
+    width: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    text-decoration: none;
+}

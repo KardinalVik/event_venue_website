@@ -1,4 +1,4 @@
-/* Site-wide Styling */
+/* Site-wide Styling (Header/Navbar and Footer) */
 
 body {
     background-color: rgb(235, 235, 235);
@@ -9,32 +9,32 @@ body {
 }
 
 .navbar {
-    align-items: center;
-    background-color: rgb(215, 215, 215);
-    border-radius: 20px;
     display: flex;
-    height: 60px;
+    align-items: center;
+    background-color: rgb(195, 195, 195);
+    border-radius: 20px;
+    height: 48px;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .navbar_item {
-    align-items: center;
-    border-radius: 15px;
     display: flex;
+    align-items: center;
+    border-radius: 10px;
     height: 100%;
-    margin: 5px;
-    font-size: 20px;
+    margin: 10px;
+    font-size: 32px;
     text-align: center;
     width: 25%;
 }
 
-#navbar_title {
-    font-size: 40px;
+.navbar_title {
+    font-size: 48px;
 }
 
 .navbar_item:hover {
-    background-color: rgb(195, 195, 195);
+    background-color: rgb(175, 175, 175);
 }
 
 a {
@@ -44,4 +44,19 @@ a {
 .navbar_item a {
     color:rgb(20, 20, 20);
     width: 100%;
+}
+
+.content {
+    background-color: rgb(215, 215, 215);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.footer {
+    background-color: rgb(195, 195, 195);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
 }

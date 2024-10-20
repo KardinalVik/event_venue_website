@@ -60,3 +60,8 @@ a {
     padding: 20px;
     text-align: center;
 }
+
+.content hr {
+    border-color: rgb(195, 195, 195);
+    color: rgb(195, 195, 195);
+}

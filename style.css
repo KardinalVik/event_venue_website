@@ -13,12 +13,10 @@ body {
     align-items: center;
     background: white;
     border-radius: calc((2em + 10px) * 1.414);
-    border-color: lightgray;
-    border-style: solid;
-    border-width: 1px;
     height: calc(2.4em + 20px);
     margin: 20px auto;
     padding: 0px 40px;
+    box-shadow: 0px 0px 5px lightgray;
     width: fit-content;
     z-index: 2;
 }
@@ -52,6 +50,7 @@ body {
     border-bottom-color: darkblue;
     border-bottom-style: solid;
     border-bottom-width: 3px;
+    cursor: pointer;
 }
 
 a {
@@ -63,11 +62,11 @@ a:visited {
     color: darkblue;
 }
 
-.navbar_item a {
-    color:rgb(20, 20, 20);
+.navbar_title a {
+    color:black;
 }
 
-.navbar_link a {
+.navbar_link p {
     margin: 0px 10px;
 }
 

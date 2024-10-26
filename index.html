@@ -11,13 +11,22 @@
     <style>
         /* Page-Specific Styling */
 
-        .section_1 {
-            display: flex;
-            align-items: center;
+        .content_text, .content_image {
+            width: 50%;
+            padding: 0px 50px;
         }
 
-        .section_1 div {
-            width: 33.33%;
+        .content_image img {
+            border-radius: 20px;
+            width: 100%;
+        }
+
+        .beta_section {
+            background-color: rgb(200, 247, 200, 0.5);
+        }
+
+        .beta_section img {
+            box-shadow: 0px 0px 5px rgb(144, 238, 144, 0.5);
         }
     </style>
 </head>
@@ -45,29 +54,54 @@
         </nav>
     </header>
 
-    <div class="section_1">
-        <div class="content">
-            <p>Hours of operation</p>
-            <p>Tuesday - Sunday</p>
-            <p>10 AM - 6 PM</p>
-            <hr>
-            <p><a href="https://www.google.com/maps/place/915+Atlanta+Hwy,+Gainesville,+GA+30501" target="_blank">915 Atlanta Hwy<br>Gainesville, GA 30501</a></p>
+    <main>
+        <div class="alpha_section">
+            <div class="content">
+                <div class="content_text">
+                    <h1>Culture & Refinement</h1>
+                    <p>? alluring tagline ?</p>
+                </div>
+                <div class="content_image">
+                    <img src="images/venue1.jpg">
+                </div>
+            </div>
         </div>
-        <div class="content">
-            <p>Promo image(s)</p>
-            <p>? Slide-show ?</p>
-        </div>
-        <div class="content">
-            <p>? Event ideas ?</p>
-        </div>
-    </div>
 
-    <div class="content" class="section_2">
-        <p>? Updates ?</p>
-    </div>
+        <div class="beta_section">
+            <div class="content">
+                <div class="content_image">
+                    <img src="images/venue2.jpg">
+                </div>
+                <div class="content_text">
+                    <h2>Available Hours</h1>
+                    <p>Tuesday - Sunday</p>
+                    <p>10am - 6pm</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content_text">
+                    <p><a href="https://www.google.com/maps/place/915+Atlanta+Hwy,+Gainesville,+GA+30501" target="_blank">915 Atlanta Hwy<br>
+                        Gainesville, GA 30501</a></p>
+                </div>
+                <div class="content_image">
+                    <img src="images/venue3.jpg">
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content_image">
+                    <img src="images/venue4.jpg">
+                </div>
+                <div class="content_text">
+                    <p>? Types of events ?</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
-        <div class="footer">
+        <div class="content footer">
             <p>Copyright (c) 2024; KardinalVik, linabeena16</p>
         </div>
     </footer>

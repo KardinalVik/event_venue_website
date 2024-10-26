@@ -1,2 +1,2 @@
-# event_venue_website
-Undergraduate Web Programming course project
+# Los Arcos
+Website for Los Arcos, and event venue hosting company.

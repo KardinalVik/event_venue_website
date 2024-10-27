@@ -85,6 +85,10 @@ a:visited {
     width: 1280px;
 }
 
+img:hover {
+    cursor: pointer;
+}
+
 .alpha_section img {
     box-shadow: 0px 0px 5px lightgray;
 }

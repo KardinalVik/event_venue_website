@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Contact Us - Los Arcos</title>
+
     <link rel="stylesheet" href="style.css">
     <style>
         /* Page-Specific Styling */
@@ -19,6 +20,11 @@
             box-shadow: 0px 0px 5px purple;
         }
     </style>
+
+    <script defer src="script.js"></script>
+    <script defer>
+        // Page-Specific Scripting
+    </script>
 </head>
 
 <body>
@@ -26,7 +32,7 @@
         <nav>
             <div class="navbar">
                 <div class="navbar_item">
-                    <img src="images/logo.png">
+                    <img src="images/logo.png" class="not_clickable">
                 </div>
                 <div class="navbar_item navbar_title">
                     <a href="index.html">Los Arcos</a>
@@ -44,23 +50,31 @@
         </nav>
     </header>
 
-    <div class="alpha_section">
-        <div class="content">
-            <h1>Contact Information</h1>
+    <main>
+        <div class="main">
+            <div class="alpha_section">
+                <div class="content">
+                    <h1>Contact Information</h1>
+                </div>
+            </div>
+        
+            <div class="beta_section">
+                <div class="content">
+                    <p>? Contact forms and information ?</p>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="beta_section">
-        <div class="content">
-            <p>? Contact forms and information ?</p>
-        </div>
-    </div>
+    </main>
 
     <footer>
         <div class="content footer">
             <p>Copyright (c) 2024; KardinalVik, linabeena16</p>
         </div>
     </footer>
+
+    <div class="modal" id="modal">
+        <img class="modal_content not_clickable" id="modal_content">
+    </div>
 </body>
 
 </html>

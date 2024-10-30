@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>About Us - Los Arcos</title>
+
     <link rel="stylesheet" href="style.css">
     <style>
         /* Page-Specific Styling */
@@ -19,6 +20,11 @@
             box-shadow: 0px 0px 5px lightpink;
         }
     </style>
+
+    <script defer src="script.js"></script>
+    <script defer>
+        // Page-Specific Scripting
+    </script>
 </head>
 
 <body>
@@ -26,7 +32,7 @@
         <nav>
             <div class="navbar">
                 <div class="navbar_item">
-                    <img src="images/logo.png">
+                    <img src="images/logo.png" class="not_clickable">
                 </div>
                 <div class="navbar_item navbar_title">
                     <a href="index.html">Los Arcos</a>
@@ -44,44 +50,52 @@
         </nav>
     </header>
 
-    <div class="alpha_section">
-        <div class="content">
-            <h1>About Los Arcos</h1>
+    <main>
+        <div class="main">
+            <div class="alpha_section">
+                <div class="content">
+                    <h1>About Los Arcos</h1>
+                </div>
+            </div>
+        
+            <div class="beta_section">
+                <div class="content">
+                    <h2>Bienvenidos a Los Arcos</h1>
+                    <p>At Los Arcos, we believe that every celebration should be as unique as the people behind it. Los Arcos was born out of a love for community, culture, and the art of bringing people together in style. </p>
+                </div>
+        
+                <div class="content">
+                    <h2>Nuestra Historia</h2>
+                    <p>Our family has deep roots in both Mexico and the local community. With generations of experience in hospitality, event planning, and business, we set out to create a venue that reflects our passion for crafting unforgettable experiences while honoring our heritage. Our journey began when we saw a need in our community for a space that could blend elegance, culture, and personal connection. From that vision, Los Arcos was created — a place where traditions meet modern sophistication.</p>
+                </div>
+        
+                <div class="content">
+                    <h2>Our Venue</h2>
+                    <p>Located in the heart of Gainesville, our venue is a fusion of classic and contemporary design. We have thoughtfully curated every detail to ensure a warm, welcoming atmosphere that suits any occasion, from weddings and quinceañeras to corporate events and milestone celebrations. Our space is designed with versatility in mind, offering flexible layouts, high-end finishes, and state-of-the-art amenities.</p>
+                </div>
+        
+                <div class="content">
+                    <h2>Our Values</h2>
+                    <p>At the heart of our family-owned business are the values of hospitality, respect, and inclusivity. Whether you're planning a large event or an intimate gathering, we treat each occasion with the care and attention it deserves. We are proud to offer a space where cultures can be celebrated, traditions can thrive, and new memories can be made. As a family-owned venue, we understand the importance of community, and we strive to make each event at Los Arcos an experience you and your guests will cherish for years to come.</p>
+                </div>
+        
+                <div class="content">
+                    <h2>Our Commitment to You</h2>
+                    <p>From the moment you step through our doors, our team will work with you to ensure every detail of your event is flawless. With a commitment to quality, personalized service, and a passion for making dreams come true, Los Arcos is more than just a venue — it’s where your historia comes to life. Thank you for considering us for your special occasion. We look forward to welcoming you and helping you create unforgettable moments.</p>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="beta_section">
-        <div class="content">
-            <h2>Bienvenidos a Los Arcos</h1>
-            <p>At Los Arcos, we believe that every celebration should be as unique as the people behind it. Los Arcos was born out of a love for community, culture, and the art of bringing people together in style. </p>
-        </div>
-
-        <div class="content">
-            <h2>Nuestra Historia</h2>
-            <p>Our family has deep roots in both Mexico and the local community. With generations of experience in hospitality, event planning, and business, we set out to create a venue that reflects our passion for crafting unforgettable experiences while honoring our heritage. Our journey began when we saw a need in our community for a space that could blend elegance, culture, and personal connection. From that vision, Los Arcos was created — a place where traditions meet modern sophistication.</p>
-        </div>
-
-        <div class="content">
-            <h2>Our Venue</h2>
-            <p>Located in the heart of Gainesville, our venue is a fusion of classic and contemporary design. We have thoughtfully curated every detail to ensure a warm, welcoming atmosphere that suits any occasion, from weddings and quinceañeras to corporate events and milestone celebrations. Our space is designed with versatility in mind, offering flexible layouts, high-end finishes, and state-of-the-art amenities.</p>
-        </div>
-
-        <div class="content">
-            <h2>Our Values</h2>
-            <p>At the heart of our family-owned business are the values of hospitality, respect, and inclusivity. Whether you're planning a large event or an intimate gathering, we treat each occasion with the care and attention it deserves. We are proud to offer a space where cultures can be celebrated, traditions can thrive, and new memories can be made. As a family-owned venue, we understand the importance of community, and we strive to make each event at Los Arcos an experience you and your guests will cherish for years to come.</p>
-        </div>
-
-        <div class="content">
-            <h2>Our Commitment to You</h2>
-            <p>From the moment you step through our doors, our team will work with you to ensure every detail of your event is flawless. With a commitment to quality, personalized service, and a passion for making dreams come true, Los Arcos is more than just a venue — it’s where your historia comes to life. Thank you for considering us for your special occasion. We look forward to welcoming you and helping you create unforgettable moments.</p>
-        </div>
-    </div>
-
+    </main>
+    
     <footer>
         <div class="content footer">
             <p>Copyright (c) 2024; KardinalVik, linabeena16</p>
         </div>
     </footer>
+
+    <div class="modal" id="modal">
+        <img class="modal_content not_clickable" id="modal_content">
+    </div>
 </body>
 
 </html>

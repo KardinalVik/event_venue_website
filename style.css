@@ -85,10 +85,39 @@ a:visited {
     width: 1280px;
 }
 
-img:hover {
-    cursor: pointer;
-}
-
 .alpha_section img {
     box-shadow: 0px 0px 5px lightgray;
+}
+
+.content img {
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.content img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+}
+
+.modal_content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 1024px;
+    max-height: 90vh;
 }

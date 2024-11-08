@@ -12,7 +12,7 @@
     <style>
         /* Page-Specific Styling */
 
-        .beta_section {
+        .beta_section { /* Colored background for main content section */
             background-color: rgb(255, 210, 128, 0.5);
         }
 
@@ -20,7 +20,7 @@
             box-shadow: 0px 0px 5px orange;
         }
 
-        .content_image {
+        .content_image { /* Makes each image in beta section a third of the width of its section */
             padding: 0px 33px;
             width: 33.33%
         }
@@ -40,7 +40,7 @@
 <body>
     <header>
         <nav>
-            <div class="navbar">
+            <div class="navbar"> <!-- Navbar -->
                 <div class="navbar_item">
                     <img src="images/logo.png" class="not_clickable">
                 </div>
@@ -62,15 +62,15 @@
 
     <main>
         <div class="main">
-            <div class="alpha_section">
-                <div class="content">
+            <div class="alpha_section"> <!-- Header section -->
+                <div class="content content_header">
                     <h1>Gallery</h1>
                 </div>
             </div>
 
-            <div class="beta_section">
-                <div class="content">
-                    <div class="content_image">
+            <div class="beta_section"> <!-- Main content section -->
+                <div class="content"> <!-- "content" div creates a horizontal section -->
+                    <div class="content_image"> <!-- 3 images to a content section -->
                         <img src="images/venue5.jpg">
                     </div>
                     <div class="content_image">
@@ -112,7 +112,7 @@
         </div>
     </footer>
 
-    <div class="modal" id="modal">
+    <div class="modal" id="modal"> <!-- Image modal, hidden by default, activated with JavaScript-->
         <img class="modal_content not_clickable" id="modal_content">
     </div>
 </body>

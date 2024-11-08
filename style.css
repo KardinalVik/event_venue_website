@@ -1,7 +1,8 @@
-/* Site-wide Styling (Header/Navbar and Footer) */
+/* Site-wide Styling */
+
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
 
-body {
+body { /* Applies to entire pages */
     font-family: 'Merienda', sans-serif; /* Merienda as primary, sans-serif as fallback */
     font-size: 1.2em;
     margin: 0px;
@@ -9,7 +10,7 @@ body {
     z-index: 1;
 }
 
-.navbar {
+.navbar { /* Navbar */
     display: flex;
     align-items: center;
     background: white;
@@ -22,7 +23,7 @@ body {
     z-index: 2;
 }
 
-.navbar_item {
+.navbar_item { /* The logo and every link on the navbar are items */
     display: flex;
     align-items: center;
     height: calc(100% - 6px);
@@ -30,18 +31,18 @@ body {
     z-index: 3;
 }
 
-.navbar_item img {
+.navbar_item img { /* Navbar logo */
     height: 2.4em;
     margin-right: 20px;
 }
 
-.navbar_title {
+.navbar_title { /* Business name on navbar */
     font-size: 1.2em;
     font-weight: bold;
     margin-right: 70px;
 }
 
-.navbar_link {
+.navbar_link { /* Clickable items on navbar */
     border-color: rgba(0, 0, 139, 0);
     border-style: solid;
     border-width: 3px;
@@ -54,7 +55,7 @@ body {
     cursor: pointer;
 }
 
-a {
+a { /* All other links on website */
     color: darkblue;
     text-decoration: none;
 }
@@ -71,7 +72,7 @@ a:visited {
     margin: 0px 10px;
 }
 
-.alpha_section, .beta_section {
+.alpha_section, .beta_section { /* Header and content sections respectively on each page */
     padding: 100px 0px;
 }
 
@@ -79,11 +80,15 @@ a:visited {
     box-shadow: 0px 0px 5px lightgray;
 }
 
-.content {
+.content { /* Horizontal sections that make up every beta section */
     display: flex;
     height: fit-content;
     margin: 100px auto;
     width: 1280px;
+}
+
+.content_header { /* Header text on every page (other than front page) */
+    padding: 0px 50px;
 }
 
 .alpha_section img {
@@ -99,7 +104,8 @@ a:visited {
     transform: scale(1.05);
 }
 
-.modal {
+.modal { /* Image modal present on every page, hidden by default, 
+    this CSS is modified by a JavaScript function when an image is clicked to make it visible */
     display: none;
     position: fixed;
     background-color: rgb(0, 0, 0, 0.5);
@@ -112,7 +118,7 @@ a:visited {
     z-index: 4;
 }
 
-.modal_content {
+.modal_content { /* Image within the modal */
     position: absolute;
     left: 50%;
     top: 50%;

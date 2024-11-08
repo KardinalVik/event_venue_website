@@ -12,7 +12,7 @@
     <style>
         /* Page-Specific Styling */
 
-        .beta_section {
+        .beta_section { /* Colored background for main content section */
             background-color: rgb(255, 218, 224, 0.5);
         }
 
@@ -20,21 +20,21 @@
             box-shadow: 0px 0px 5px lightpink;
         }
 
-        .content_heading {
+        .content_heading { /* 1 Heading per content section */
             display: flex;
             align-items: center;
             padding: 0px 50px;
             width: 33.3%;
         }
 
-        .content_text {
+        .content_text { /* Description text associated with heading */
             display: flex;
             align-items: center;
             padding: 0px 50px;
             width: 66.7%;
         }
 
-        hr {
+        hr { /* Styles horizontal line in-between content sections */
             color: rgb(128, 128, 128, 0.5);
             width: 80%;
             max-width: 1280px;
@@ -50,7 +50,7 @@
 <body>
     <header>
         <nav>
-            <div class="navbar">
+            <div class="navbar"> <!-- Navbar -->
                 <div class="navbar_item">
                     <img src="images/logo.png" class="not_clickable">
                 </div>
@@ -72,18 +72,18 @@
 
     <main>
         <div class="main">
-            <div class="alpha_section">
-                <div class="content">
+            <div class="alpha_section"> <!-- Header section -->
+                <div class="content content_header">
                     <h1>About Los Arcos</h1>
                 </div>
             </div>
         
-            <div class="beta_section">
-                <div class="content">
-                    <div class="content_text">
+            <div class="beta_section"> <!-- Main content section -->
+                <div class="content"> <!-- "content" div creates a horizontal section -->
+                    <div class="content_text"> <!-- Description text -->
                         <p>At Los Arcos, we believe that every celebration should be as unique as the people behind it. Los Arcos was born out of a love for community, culture, and the art of bringing people together in style. </p>
                     </div>
-                    <div class="content_heading">
+                    <div class="content_heading"> <!-- Heading associated with description in content section -->
                         <h2>Bienvenidos a Los Arcos</h2>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
         </div>
     </footer>
 
-    <div class="modal" id="modal">
+    <div class="modal" id="modal"> <!-- Image modal, hidden by default, activated with JavaScript-->
         <img class="modal_content not_clickable" id="modal_content">
     </div>
 </body>

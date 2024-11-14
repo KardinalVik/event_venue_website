@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         /* Page-Specific Styling */
-
+        
         .content_text, .content_image { /* Separates text and content into halves of section */
             width: 50%;
             padding: 0px 50px;
@@ -29,6 +29,8 @@
         .beta_section img {
             box-shadow: 0px 0px 5px lightgreen;
         }
+
+
     </style>
 
     <script defer src="script.js"></script>
@@ -41,7 +43,7 @@
     <header>
         <nav>
             <div class="navbar"> <!-- Navbar -->
-                <div class="navbar_item">
+                <div class="navbar_item darkmode_navbar">
                     <img src="images/logo.png" class="not_clickable">
                 </div>
                 <div class="navbar_item navbar_title">
@@ -118,6 +120,10 @@
         </div>
     </main>
 
+    <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggles dark mode">
+        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+      </button> <!-- settings for darkmode button as well as an aria label to describe what it does -->
+
     <footer>
         <div class="content footer">
             <p>Copyright (c) 2024; KardinalVik, linabeena16</p>
@@ -127,6 +133,8 @@
     <div class="modal" id="modal"> <!-- Image modal, hidden by default, activated with JavaScript-->
         <img class="modal_content not_clickable" id="modal_content">
     </div>
+
+    <script src="darkmode.js"></script> <!-- Runs darkmode script-->
 </body>
 
 </html>

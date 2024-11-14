@@ -11,6 +11,7 @@ body { /* Applies to entire pages */
 }
 
 .navbar { /* Navbar */
+    color: black;
     display: flex;
     align-items: center;
     background: white;
@@ -22,6 +23,8 @@ body { /* Applies to entire pages */
     width: fit-content;
     z-index: 2;
 }
+
+
 
 .navbar_item { /* The logo and every link on the navbar are items */
     display: flex;
@@ -43,7 +46,7 @@ body { /* Applies to entire pages */
 }
 
 .navbar_link { /* Clickable items on navbar */
-    border-color: rgba(0, 0, 139, 0);
+    border-color: rgba(139, 137, 0, 0);
     border-style: solid;
     border-width: 3px;
 }
@@ -128,3 +131,27 @@ a:visited {
     max-width: 1024px;
     max-height: 90vh;
 }
+
+.dark-mode-toggle { /* positional and style settings for darkmode button */
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    color: var(--foreground);
+    border: 2px solid currentColor;
+    padding: 4px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.darkmode { /* darkmode base style */
+    background-color: rgb(23, 27, 39);
+    color: white;
+}
+
+
+
+
